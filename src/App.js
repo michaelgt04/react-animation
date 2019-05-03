@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components'
 import logo from './logo.svg';
-import './App.css';
+import Toggle from './Toggle'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="logo" />
-          <button className="menu-button">Menu</button>
-        </header>
-      </div>
-    );
-  }
+const App = props => {
+  return (
+    <AppWrapper>
+      <Toggle />
+    </AppWrapper>
+  );
 }
+
+const AppWrapper = styled.div`
+  background-color: #F7F6EE;
+`
 
 export default App;
